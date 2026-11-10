@@ -200,6 +200,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""f06dbe25-cc8f-4971-ab32-668933b18097"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""65d23754-fd2b-4930-bfa1-fb41469b48f9"",
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",

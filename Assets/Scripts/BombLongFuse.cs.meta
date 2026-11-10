@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f2a49adb393752f40900c25969f4fb14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fuseBeep: {fileID: 8300000, guid: 3c054b35f47551f4290c6633fd517393, type: 3}
+  - explosionSound: {fileID: 8300000, guid: 54d237040aca5b44fb99a0ba05489dc7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

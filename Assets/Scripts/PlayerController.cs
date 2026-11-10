@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        currentBombs = maxBombs;
     }
 
     private void OnEnable()
@@ -147,7 +149,17 @@ public class PlayerController : MonoBehaviour
 
     private void PlaceBomb()
     {
+
+        if (currentBombs <= 0)
+        {
+            return;
+        }
+
         Instantiate(bombPrefab, bombSpawnPoint.position, Quaternion.identity);
+
+        currentBombs--;
+
+        Debug.Log("Bombs remaining: " + currentBombs);
     }
 
 
@@ -164,4 +176,15 @@ public class PlayerController : MonoBehaviour
 
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
+    //bomb inventory
+
+    [Range(1, 10)]
+    [SerializeField] private int maxBombs = 3;
+
+    private int currentBombs;
+
+
+
+
 }
